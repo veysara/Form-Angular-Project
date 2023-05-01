@@ -6,10 +6,9 @@ import { FormControl, FormGroup } from '@angular/forms';
   templateUrl: './test-form.component.html',
   styleUrls: ['./test-form.component.scss']
 })
+
 export class TestFormComponent implements OnInit {
-
   title = 'Try your best tomorrow is better';
-
   showButton: boolean = true;
   toggleButton(){
     this.showButton = !this.showButton;
@@ -76,8 +75,8 @@ export class TestFormComponent implements OnInit {
       isMarried: false,
       country: "3",
       address: {
-        city: "Bangalore",
-        street: "Brigade Road",
+        city: "sdkfsdf",
+        street: "jaja",
         pincode: "60"
       }
     };
