@@ -7,6 +7,12 @@ import { AppComponent } from './app.component';
 import { ReactiveComponent } from './components/reactive/reactive.component';
 import { TemplateComponent } from './components/template/template.component';
 import { TestFormComponent } from './components/test-form/test-form.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatInputModule} from '@angular/material/input';
+import {MatIconModule} from '@angular/material/icon';
+import {A11yModule} from '@angular/cdk/a11y';
+import {CdkAccordionModule} from '@angular/cdk/accordion';
+import {ClipboardModule} from '@angular/cdk/clipboard';
 
 
 @NgModule({
@@ -22,11 +28,21 @@ import { TestFormComponent } from './components/test-form/test-form.component';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
+    BrowserAnimationsModule,
+    MatInputModule,
+    MatIconModule,
     
+    A11yModule,
+    CdkAccordionModule,
+    ClipboardModule,
   ],
 
-  providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [
+    AppComponent,
+    TemplateComponent,
+    ReactiveComponent,
+    TestFormComponent
+  ]
 })
 
 export class AppModule { }
