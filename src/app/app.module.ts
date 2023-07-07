@@ -13,6 +13,8 @@ import {MatIconModule} from '@angular/material/icon';
 import {A11yModule} from '@angular/cdk/a11y';
 import {CdkAccordionModule} from '@angular/cdk/accordion';
 import {ClipboardModule} from '@angular/cdk/clipboard';
+import { DialogContentExampleDialogComponent } from './shares/dialog-content-example-dialog/dialog-content-example-dialog.component';
+import { DialogFormComponent } from './shares/dialog-form/dialog-form.component';
 
 
 @NgModule({
@@ -20,7 +22,9 @@ import {ClipboardModule} from '@angular/cdk/clipboard';
     AppComponent,
     TemplateComponent,
     ReactiveComponent,
-    TestFormComponent
+    TestFormComponent,
+    DialogContentExampleDialogComponent,
+    DialogFormComponent
   ],
 
   imports: [
@@ -35,13 +39,16 @@ import {ClipboardModule} from '@angular/cdk/clipboard';
     A11yModule,
     CdkAccordionModule,
     ClipboardModule,
+    
   ],
 
   bootstrap: [
     AppComponent,
     TemplateComponent,
     ReactiveComponent,
-    TestFormComponent
+    TestFormComponent,
+    DialogContentExampleDialogComponent,
+    DialogFormComponent
   ]
 })
 
