@@ -8,12 +8,17 @@ import { Component, OnInit } from '@angular/core';
 export class TemplateComponent implements OnInit {
   value = 'Clear me';
 
-  constructor() { 
-
+  constructor(
+    // private dialog: MatDialog,
+  ) { 
+    
   }
 
   ngOnInit(): void {
 
   }
 
+  openDialog(){
+    // this.dilo
+  }
 }
