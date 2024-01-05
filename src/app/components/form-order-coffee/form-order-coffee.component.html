@@ -1,0 +1,85 @@
+<div class="head-content">
+    <form class="container">
+        <div class="title">
+            <h2>Coffee Order Form</h2>
+        </div>
+        <div class="d-flex">
+            <div class="row">
+                <div class="col-sm-8">
+                    <label>
+                        <span class="lname">Last Name <span class="required">*</span></span>
+                        <input type="text" name="lname">
+                    </label>
+                    <label>
+                        <span class="fname">First Name <span class="required">*</span></span>
+                        <input type="text" name="fname">
+                    </label>
+                    <label>
+                        <span>Coffee <span class="required">*</span></span>
+                        <select name="selection">
+                            <option value="select">Select a type of coffee...</option>
+                            <option value="AFG">Cappuccino (1/$5.5)</option>
+                            <option value="ALA">Black Coffee (1/$5.0)</option>
+                            <option value="ALB">Fried Rice (1/$5.0)</option>
+                            <option value="DZA">Cappuccino (1/$7.0)</option>
+                            <option value="ASM">Iced Cappuccino (1/$5.5)</option>
+                            <option value="AND">Iced Cappuccino (1/$6.0)</option>
+                            <option value="AGO">Frappcuccino (1/$7.0)</option>
+                            <option value="AIA">Frappcuccino (1/$6.5)</option>
+                        </select>
+                    </label>
+                    <label>
+                        <span>Place <span class="required">*</span></span>
+                        <input type="text" name="cn">
+                    </label>
+                    <label>
+                        <span>Phone <span class="required">*</span></span>
+                        <input type="tel" name="city"> 
+                    </label>
+                    <label>
+                        <span>Email </span>
+                        <input type="email" name="city"> 
+                    </label>
+                </div>
+                <div class="col-sm-4">
+                    <div class="Yorder">
+                        <table>
+                            <tr>
+                                <th colspan="2">Your order</th>
+                            </tr>
+                            <tr>
+                                <td>Type of Coffee</td>
+                                <td>Cappuccino </td>
+                            </tr>
+                            <tr>
+                                <td>Number of Coffee</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>Subtotal</td>
+                                <td>$22.00</td>
+                            </tr>
+                        </table><br>
+                        <div>
+                            <input type="radio" name="dbt" value="dbt" checked> Direct Bank Transfer
+                        </div>
+                        <p>
+                            Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.
+                        </p>
+                        <div>
+                            <input type="radio" name="dbt" value="cd"> Cash on Delivery
+                        </div>
+                        <div>
+                            <input type="radio" name="dbt" value="cd"> Paypal 
+                            <span>
+                                <img src="https://www.logolynx.com/images/logolynx/c3/c36093ca9fb6c250f74d319550acac4d.jpeg" alt="" width="50">
+                            </span>
+                        </div>
+                        <button type="button">Place Order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+

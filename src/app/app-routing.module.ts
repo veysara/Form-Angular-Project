@@ -1,15 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ReactiveComponent } from './components/reactive/reactive.component';
-import { TemplateComponent } from './components/template/template.component';
-import { TestFormComponent } from './components/test-form/test-form.component';
+import { MenuCoffeeComponent } from './components/menu-coffee/menu-coffee.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { FormOrderCoffeeComponent } from './components/form-order-coffee/form-order-coffee.component';
 
 
 
 const routes: Routes = [
-  { path: 'template', component: TemplateComponent },
-  { path: 'reactive', component: ReactiveComponent },
-  { path: 'test-form', component: TestFormComponent },
+  { path: 'contact', component: ContactComponent },
+  { path: 'menu-coffee', component: MenuCoffeeComponent },
+  { path: 'form-order-coffee', component: FormOrderCoffeeComponent },
 ];
 
 @NgModule({

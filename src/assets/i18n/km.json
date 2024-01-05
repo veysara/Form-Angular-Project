@@ -1,11 +1,39 @@
 {
-    "project": {
-        "sara": "សារ៉ា",
+    "general": {
+        "last_name": "គោត្តនាម",
+        "first_name": "នាម"
+    },
+
+    "status": {
         "lang": {
             "km": "ភាសាខ្មែរ",
             "en": "English",
             "kh": "ខ្មែរ",
-            "latin": "ឡាតាំង"
+            "latin": "ឡាតាំង",
+            "lang": "ភាសា"
         }
+    },
+
+    "contact": {
+        "last_name": "គោត្តនាម",
+        "first_name": "នាម",
+        "gender": "ភេទ",
+        "id_member": "លេខសម្គាល់សមាជិក",
+        "province": "ខេត្ត",
+        "street": "ផ្លូវ",
+        "house_number": "ផ្ទះលេខ",
+        "phone_number": "លេខទូរស័ព្ទ",
+        "contact_us": "ទាក់ទងមកពួកយើង",
+        "genders": {
+            "m": "ប្រុស",
+            "f": "ស្រី",
+            "all": "ទាំងអស់",
+            "label": "ភេទ{{ value }}"
+        }
+    },
+
+    "title": {
+        "coffee_name": "Sara - Coffee Shop For U",
+        "des_coffee": "កាហ្វេ​ត្រូវ​បាន​ឆុង​ដោយ​ដំបូង​គេ​ដុត​គ្រាប់​កាហ្វេ​បៃតង​លើ​ធ្យូង​ក្តៅ​ក្នុង​ចង្ក្រាន។"
     }
 }

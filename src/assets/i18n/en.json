@@ -1,0 +1,39 @@
+{
+    "general": {
+        "last_name": "Last Name",
+        "first_name": "First Name"
+    },
+    
+    "status": {
+        "lang": {
+            "km": "ភាសាខ្មែរ",
+            "en": "English",
+            "kh": "Khmer",
+            "latin": "Latin",
+            "lang": "Language"
+        }
+    },
+
+    "contact": {
+        "last_name": "Last Name",
+        "first_name": "First Name",
+        "gender": "Gender",
+        "id_member": "Id Member",
+        "province": "Province",
+        "street": "Street",
+        "house_number": "House Number",
+        "phone_number": "Phone Number",
+        "contact_us": "Contact Us",
+        "genders": {
+            "m": "Male",
+            "f": "Femalse",
+            "all": "All",
+            "label": "Gender{{ value }}"
+        }    
+    },
+
+    "title": {
+        "coffee_name": "Sara - Coffee Shop For U",
+        "des_coffee": "The coffee is brewed by first roasting the green coffee beans over hot coals in a brazier."
+    }
+}

@@ -1,50 +1,44 @@
-<div class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-lg-12">
+<header class="header-area">
+  <!-- site-navbar start -->
+  <div class="navbar-area">
+    <div class="container">
+      <nav class="site-navbar">
+        <!-- site logo -->
+        <a href="#home" class="site-logo">Sara Coffe</a>
 
-        <div class="navbar-header">
-          <a href="#" class="navbar-brand"><span class="glyphicon glyphicon-user"></span> Profile </a>
-        </div>
+        <!-- site menu/nav -->
+        <ul>
+          <li><a [routerLink]="['/']" routerLinkActive="router-link-active">Home</a></li>
+          <li><a [routerLink]="['/menu-coffee']" routerLinkActive="router-link-active">Our Menu</a></li>
+          <li><a [routerLink]="['/form-order-coffee']" routerLinkActive="router-link-active">Order</a></li>
+          <li><a [routerLink]="['/contact']" routerLinkActive="router-link-active">Contact</a></li>
+        </ul>
+        <ul>
+          <li>
+            <mat-form-field [formGroup]="form">
+              <mat-select formControlName="lang">
+                <mat-option *ngFor="let lang of language" [value]="lang">{{ lang.lang }}</mat-option>
+                <mat-option [value]=1 (click)="switchLang('km')">{{"status.lang.km" | translate}}</mat-option>
+                <mat-option [value]=2 (click)="switchLang('en')">{{"status.lang.en" | translate}}</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </li>
+        </ul>
 
-        <div class="navbar-collapse collapse" id="mobile_menu">
+        <!-- nav-toggler for mobile version only -->
+        <button class="nav-toggler">
+          <span></span>
+        </button>
+      </nav>
+    </div>
+  </div><!-- navbar-area end -->
 
-          <ul class="nav navbar-nav">
-            <li>
-              <a [routerLink]="['/test-form']" routerLinkActive="router-link-active">Home</a>
-            </li>
-            <li>
-              <a [routerLink]="['/template']" routerLinkActive="router-link-active">Welcome</a>
-            </li>
-            <li>
-              <a [routerLink]="['/reactive']" routerLinkActive="router-link-active">Services</a>
-            </li>
-            <li>
-              <a href="#">Gallery</a>
-            </li>
-            <li>
-              <a href="#">Contact Us</a>
-            </li>
-          </ul>
-
-          <ul class="nav navbar-nav navbar-right">
-            <li>
-              <form action="" class="navbar-form">
-                <div class="form-group">
-                  <div class="input-group">
-                    <input type="search" name="search" id="" placeholder="Search Anything Here..." class="form-control">
-                    <span class="input-group-addon"><span class="glyphicon glyphicon-search"></span></span>
-                  </div>
-                </div>
-              </form>
-            </li>
-          </ul>
-          
-        </div>
-      </div>
+  <div class="intro-area">
+    <div class="container">
+      <h1>Sara - Coffee Shop For U</h1>
+      <p>{{"title.des_coffee" | translate}}</p>
     </div>
   </div>
-</div>
-
+</header>
 
 <router-outlet></router-outlet>

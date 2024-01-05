@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ReactiveComponent } from './reactive.component';
+import { TemplateComponent } from './contact.component';
 
-describe('ReactiveComponent', () => {
-  let component: ReactiveComponent;
-  let fixture: ComponentFixture<ReactiveComponent>;
+describe('TemplateComponent', () => {
+  let component: TemplateComponent;
+  let fixture: ComponentFixture<TemplateComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ReactiveComponent ]
+      declarations: [ TemplateComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ReactiveComponent);
+    fixture = TestBed.createComponent(TemplateComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
